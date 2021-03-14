@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalog-k8s-deployment
+  labels:
+    app: catalog-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: catalog-deployment
+  template:
+    metadata:
+      labels:
+        app: catalog-deployment
+    spec:
+      containers:
+      - name: catalog-deployment
+        image: kbellad/catalogmanagement
+        ports:
+        - containerPort: 8088
