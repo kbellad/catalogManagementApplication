@@ -1,5 +1,5 @@
 # catalogManagementApplication
-Catalog Management Software Application
+Catalog Management Software Application using Spring Boot + Micro Services + Docker + Kubernetes
 
 
 *****************Catalog Management Software Application*****************
